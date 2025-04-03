@@ -8,7 +8,7 @@ Install with your favorite package manager.
 ## Usage
 
 ```lua
-require('nvim-terminal')("float")
-require('nvim-terminal')("bottom")
-require('nvim-terminal')("tab")
+vim.keymap.set({ "n", "t" }, "YOUR KEY BINDING", require("nvim-terminal")("bottom")) -- This will toggle a terminal
+vim.keymap.set({ "n", "t" }, "YOUR KEY BINDING", require("nvim-terminal")("float")) -- This will toggle a terminal
+vim.keymap.set({ "n", "t" }, "YOUR KEY BINDING", require("nvim-terminal")("tab")) -- This will toggle a terminal
 ```
